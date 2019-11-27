@@ -203,7 +203,6 @@ export class BsDatepickerDirective implements OnInit, OnDestroy, OnChanges {
     this._subs.push(
       this._datepickerRef.instance.valueChange.subscribe((value: Date) => {
         this.bsValue = value;
-        this.hide();
       })
     );
   }
